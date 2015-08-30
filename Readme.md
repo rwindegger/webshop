@@ -9,6 +9,7 @@ The project was an assessment project during a course in the year 2006.
 #Configuration
 ##Server
 Go and find a LAMP/WAMP dating Nov. 2006. I'm not sure what versions where used.
+
 If you find out what actually works let me know.
 ##Database
 ###Database setup
