@@ -1,7 +1,7 @@
 function erzXMLAsync () {
     var erstObj = null;
     try {
-		erstObj = new ActiveXObject("Microsoft.XMLHTTP");	// Ältere MS derivate
+		erstObj = new ActiveXObject("Microsoft.XMLHTTP");	// Ã„ltere MS derivate
     } catch (Error) {
 		try {
 	    	erstObj = new ActiveXObject("MSXML2.XMLHTTP");	// Aktuelle MS derivate
@@ -9,7 +9,7 @@ function erzXMLAsync () {
 	    	try {
 				erstObj = new XMLHttpRequest();			// Andere Browser
 	   		} catch (Error) {
-				showError("Fehler bei erzeugung.");			// Erzeugung nicht möglich
+				showError("Fehler bei erzeugung.");			// Erzeugung nicht mÃ¶glich
 	    	}
 		}
     }
@@ -18,7 +18,7 @@ function erzXMLAsync () {
 
 function loadAGB () {
 	objAGB = erzXMLAsync();
-	objAGB.open("post","./agb.xml",true);
+	objAGB.open("get","./agb.xml",true);
 	objAGB.onreadystatechange = readyAGB;
 	objAGB.send(null);
 }
